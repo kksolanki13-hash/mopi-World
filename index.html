@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOPi World - Web3 P2E Country Simulator</title>
+  <!-- Google Fonts: Outfit for Headings, Inter for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons for Socials and Elements -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Global Background Overlay -->
+  <div class="bg-overlay"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="assets/logo.jpg" alt="MOPi Logo" id="logo-img">
+        <span class="logo-text">MOPi</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#social">Community</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="whitepaper.html" class="btn btn-secondary nav-wp-btn">
+          <i class="fa-solid fa-file-invoice"></i> Whitepaper
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title animate-glow">MOPi world</h1>
+        <p class="hero-subtitle">The ultimate next-generation decentralized country simulator. Manage, trade, and evolve your MOPis in a high-speed universe.</p>
+        <div class="hero-cta-buttons">
+          <a href="whitepaper.html" class="btn btn-outline btn-large">
+            <i class="fa-solid fa-book-open"></i> Read Whitepaper
+          </a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <!-- Photo Switcher Component -->
+        <div class="photo-switcher-container">
+          <div class="photo-switcher-slide active">
+            <img src="assets/slide1.jpg" alt="MOPi Space Empire" class="switcher-img">
+            <div class="slide-caption">Galaxy Exploration</div>
+          </div>
+          <div class="photo-switcher-slide">
+            <img src="assets/slide2.jpg" alt="MOPi Town Building" class="switcher-img">
+            <div class="slide-caption">Empire Simulation</div>
+          </div>
+          <div class="photo-switcher-slide">
+            <img src="assets/slide3.jpg" alt="MOPi Combat Mode" class="switcher-img">
+            <div class="slide-caption">Battle Arena</div>
+          </div>
+          
+          <button class="switcher-arrow switcher-arrow-left" id="prev-slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="switcher-arrow switcher-arrow-right" id="next-slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="switcher-dots">
+            <span class="switcher-dot active" data-index="0"></span>
+            <span class="switcher-dot" data-index="1"></span>
+            <span class="switcher-dot" data-index="2"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Information Section -->
+  <section id="about" class="about-section glass-section">
+    <div class="section-container">
+      <div class="about-content">
+        <h2 class="section-title">About the Universe</h2>
+        <p class="about-info-text">
+          MOPi WORLD is a next-generation Play-to-Earn (P2E) Country-Simulator where players manage "cosmic bean" citizens known as MOPis. earn reward coin by complit the task. Unlike typical games, MOPi WORLD operates on an accelerated timeline (1 Earth Year = 1,008 MOPi Years), allowing for rapid evolution of empires and technologies.
+        </p>
+      </div>
+
+      <!-- Double Video Section (Side-by-Side) -->
+      <div class="videos-grid">
+        <div class="video-card glass-card">
+          <div class="video-header">
+            <h3><i class="fa-brands fa-youtube icon-youtube"></i> MOPi Official Channel</h3>
+          </div>
+          <div class="video-placeholder-container">
+            <div class="video-custom-thumb" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/background.jpg');">
+              <i class="fa-brands fa-youtube play-icon-overlay"></i>
+              <div class="thumb-text">
+                <p>Join our official YouTube community for tutorials, DevLogs, and game sneak peeks.</p>
+                <a href="https://www.youtube.com/channel/UCM3lznOv7qZjed2yyhvaHNQ" target="_blank" class="btn btn-secondary btn-small">
+                  Visit Channel <i class="fa-solid fa-external-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card glass-card">
+          <div class="video-header">
+            <h3><i class="fa-solid fa-circle-play icon-play"></i> YouTube Demo</h3>
+          </div>
+          <div class="video-placeholder-container" style="height: 100%;">
+            <div class="video-custom-thumb" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/background.jpg'); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%; border: 1px dashed rgba(255,255,255,0.2);">
+              <i class="fa-solid fa-hourglass-half" style="font-size: 3rem; color: var(--color-gold); margin-bottom: 15px;"></i>
+              <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 10px;">Trailer Coming Soon</h3>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem; max-width: 80%;">We are putting the final touches on our gameplay demo. Subscribe to our channel to be the first to see it!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- P2E Goals Section -->
+  <section id="goals" class="goals-section glass-section">
+    <div class="section-container">
+      <h2 class="section-title text-center">Goals of the P2E Game</h2>
+      <div class="goals-grid">
+        <div class="goal-card glass-card">
+          <div class="goal-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          <h3>Sustainable Tokenomics</h3>
+          <p>Earn reward coins by completing daily tasks and milestones, designed with anti-inflationary staking controls.</p>
+        </div>
+        <div class="goal-card glass-card">
+          <div class="goal-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+          <h3>Rapid Empire Evolution</h3>
+          <p>Harness the accelerated timeline (1 Earth Year = 1,008 MOPi Years) to grow technology, build alliances, and expand across galaxies.</p>
+        </div>
+        <div class="goal-card glass-card">
+          <div class="goal-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Cosmic Bean Governance</h3>
+          <p>Govern and direct your MOPis. Assign roles, allocate resources, and customize stats to optimize productivity.</p>
+        </div>
+        <div class="goal-card glass-card">
+          <div class="goal-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Dynamic NFT Marketplace</h3>
+          <p>Trade unique MOPi character variants, skins, and technology cards securely on the decentralized marketplace.</p>
+        </div>
+      </div>
+
+      <!-- Whitepaper Section (Directly under Goals, containing Read-only embed) -->
+      <div id="whitepaper" class="whitepaper-subsection glass-card">
+        <div class="wp-header">
+          <div class="wp-icon-wrap"><i class="fa-solid fa-file-contract"></i></div>
+          <h2>MOPi Official Whitepaper</h2>
+          <p>Explore the full game mechanics, token distribution models, roadmap details, and community governance structure. Click below to read the full document — no login required.</p>
+          <div class="wp-btn-row">
+            <a href="whitepaper.html" class="btn btn-primary btn-large">
+              <i class="fa-solid fa-book-open"></i> Read Whitepaper
+            </a>
+            <div class="wp-badge">
+              <i class="fa-solid fa-circle-check"></i> Officially Verified
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="roadmap-section glass-section">
+    <div class="section-container">
+      <h2 class="section-title text-center">Future Roadmap</h2>
+      <p class="section-subtitle text-center">Our multi-year developmental timeline outlining milestones at 6-month intervals.</p>
+      
+      <div class="roadmap-layout">
+        <!-- Circular Roadmap Image (Left/Center) -->
+        <div class="roadmap-image-container glass-card">
+          <img src="assets/roadmap.png" alt="MOPi World Official Roadmap" class="roadmap-img">
+        </div>
+
+        <!-- Timeline Roadmap List (Right) -->
+        <div class="roadmap-timeline-details">
+          <div class="timeline-item glass-card">
+            <div class="timeline-badge">2026 H1</div>
+            <div class="timeline-content">
+              <h4>Genesis Mint</h4>
+              <p>Developing 2D pixel-based NFTs, Smart Contracts deployment, and community collection dynamics. Release of 8,888 Genesis MOPis.</p>
+            </div>
+          </div>
+          <div class="timeline-item glass-card">
+            <div class="timeline-badge">2026 H2</div>
+            <div class="timeline-content">
+              <h4>2D Evolution</h4>
+              <p>Transition development from 2D pixel styles into fully interactive 3D assets. Expanding character traits and customization.</p>
+            </div>
+          </div>
+          <div class="timeline-item glass-card">
+            <div class="timeline-badge">2027 H1</div>
+            <div class="timeline-content">
+              <h4>3D Minting</h4>
+              <p>Initial distribution of the 3D NFT assets, expanding classes (Cyber Mage, Bio Hunter) and starting pre-alpha arena tests.</p>
+            </div>
+          </div>
+          <div class="timeline-item glass-card">
+            <div class="timeline-badge">2027 H2</div>
+            <div class="timeline-content">
+              <h4>Economic Integration</h4>
+              <p>Launching decentralized economy tokenomics, market smart contracts, and integrating assets directly into the game ecosystem.</p>
+            </div>
+          </div>
+          <div class="timeline-item glass-card">
+            <div class="timeline-badge">2028 H1</div>
+            <div class="timeline-content">
+              <h4>Game Dev & Beta</h4>
+              <p>Creation of the MOPi universe simulator. Full game systems implementation, tournament frameworks, and closed beta access.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Developer Team Section -->
+  <section id="team" class="team-section glass-section">
+    <div class="section-container">
+      <h2 class="section-title text-center">Meet the Developers</h2>
+      <p class="section-subtitle text-center">The core creative force behind MOPi World.</p>
+      
+      <div class="team-grid">
+        <div class="team-member-card glass-card">
+          <div class="member-avatar-wrapper">
+            <img src="assets/team_designer.jpg" alt="MOPi Designer" class="member-avatar">
+          </div>
+          <div class="member-info">
+            <h3>Elena Rostova</h3>
+            <span class="member-role">Lead Designer</span>
+            <p class="member-bio">Creative visionary shaping the unique cosmic bean aesthetic and asset designs.</p>
+          </div>
+        </div>
+
+        <div class="team-member-card glass-card">
+          <div class="member-avatar-wrapper">
+            <img src="assets/team_manager.jpg" alt="MOPi Manager" class="member-avatar">
+          </div>
+          <div class="member-info">
+            <h3>Marcus Vance</h3>
+            <span class="member-role">Project Manager</span>
+            <p class="member-bio">Coordinating milestones, token economics modeling, and partnership integrations.</p>
+          </div>
+        </div>
+
+        <div class="team-member-card glass-card">
+          <div class="member-avatar-wrapper">
+            <img src="assets/team_media.jpg" alt="MOPi Media Handling" class="member-avatar">
+          </div>
+          <div class="member-info">
+            <h3>Alex Chen</h3>
+            <span class="member-role">Media Handling</span>
+            <p class="member-bio">Managing public relations, content delivery pipelines, and global marketing outreach.</p>
+          </div>
+        </div>
+
+        <div class="team-member-card glass-card">
+          <div class="member-avatar-wrapper">
+            <img src="assets/team_youtuber.jpg" alt="MOPi YouTuber" class="member-avatar">
+          </div>
+          <div class="member-info">
+            <h3>Tyler "Guru" Brooks</h3>
+            <span class="member-role">Official YouTuber</span>
+            <p class="member-bio">Leading the community-facing video updates, tutorials, and streaming broadcasts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media & Community -->
+  <section id="social" class="social-section glass-section">
+    <div class="section-container">
+      <h2 class="section-title text-center">Join Our Community</h2>
+      <p class="section-subtitle text-center">Get the latest updates, participate in giveaways, and discuss strategies.</p>
+      
+      <div class="social-links-grid">
+        <a href="https://www.youtube.com/channel/UCM3lznOv7qZjed2yyhvaHNQ" target="_blank" class="social-card youtube-card glass-card">
+          <div class="social-icon-wrapper"><i class="fa-brands fa-youtube"></i></div>
+          <div class="social-details">
+            <h3>YouTube</h3>
+            <p>Official Videos & DevLogs</p>
+          </div>
+          <div class="social-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="https://x.com/MOPi10008" target="_blank" class="social-card x-card glass-card">
+          <div class="social-icon-wrapper"><i class="fa-brands fa-x-twitter"></i></div>
+          <div class="social-details">
+            <h3>X.com</h3>
+            <p>Announcements & Shards</p>
+          </div>
+          <div class="social-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61583608565065&sk=grid" target="_blank" class="social-card facebook-card glass-card">
+          <div class="social-icon-wrapper"><i class="fa-brands fa-facebook"></i></div>
+          <div class="social-details">
+            <h3>Facebook</h3>
+            <p>Global Fan Community</p>
+          </div>
+          <div class="social-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+
+        <a href="https://www.instagram.com/mopi.world/" target="_blank" class="social-card instagram-card glass-card">
+          <div class="social-icon-wrapper"><i class="fa-brands fa-instagram"></i></div>
+          <div class="social-details">
+            <h3>Instagram</h3>
+            <p>Art & Sneak Peeks</p>
+          </div>
+          <div class="social-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supporting Organizations -->
+  <section id="partners" class="partners-section glass-section">
+    <div class="section-container">
+      <h2 class="section-title text-center">Supporting Organizations</h2>
+      <div class="partners-grid">
+        <div class="partner-logo-box glass-card partner-binance">
+          <span class="partner-name"><i class="fa-solid fa-cubes" style="color:#F0B90B"></i> <span style="color:#F0B90B">Binance</span></span>
+        </div>
+        <div class="partner-logo-box glass-card partner-solana">
+          <span class="partner-name"><i class="fa-solid fa-bolt" style="color:#9945FF"></i> <span style="color:#9945FF">Solana</span></span>
+        </div>
+        <div class="partner-logo-box glass-card partner-opensea">
+          <span class="partner-name"><i class="fa-solid fa-anchor" style="color:#2081E2"></i> <span style="color:#2081E2">OpenSea</span></span>
+        </div>
+        <div class="partner-logo-box glass-card partner-pancake">
+          <span class="partner-name"><i class="fa-solid fa-cookie" style="color:#1FC7D4"></i> <span style="color:#1FC7D4">PancakeSwap</span></span>
+        </div>
+        <div class="partner-logo-box glass-card partner-ethereum">
+          <span class="partner-name"><i class="fa-brands fa-ethereum" style="color:#627EEA"></i> <span style="color:#627EEA">Ethereum Blockchain</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wallet Modal Simulation -->
+  <div class="modal" id="wallet-modal">
+    <div class="modal-content glass-card">
+      <span class="modal-close" id="modal-close-btn">&times;</span>
+      <h2><i class="fa-solid fa-wallet"></i> Connect Web3 Wallet</h2>
+      <p class="modal-desc">Select your preferred cryptocurrency wallet to sign in to MOPi World.</p>
+      
+      <div class="wallet-options">
+        <button class="wallet-option-btn glass-card" data-wallet="metamask">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/metamask-logo/2.2.0/metamask-logo.svg" alt="MetaMask" class="wallet-icon-svg" onerror="this.src='https://raw.githubusercontent.com/MetaMask/brand-resources/master/SVG/metamask-fox.svg'">
+          <span>MetaMask</span>
+          <span class="badge badge-popular">Popular</span>
+        </button>
+        <button class="wallet-option-btn glass-card" data-wallet="phantom">
+          <span class="wallet-icon-fallback"><i class="fa-solid fa-ghost"></i></span>
+          <span>Phantom Wallet</span>
+        </button>
+        <button class="wallet-option-btn glass-card" data-wallet="walletconnect">
+          <span class="wallet-icon-fallback"><i class="fa-solid fa-circle-nodes"></i></span>
+          <span>WalletConnect</span>
+        </button>
+      </div>
+
+      <div class="wallet-loading" id="wallet-loader" style="display: none;">
+        <div class="spinner"></div>
+        <p>Awaiting signature from your wallet extension...</p>
+      </div>
+
+      <div class="wallet-success" id="wallet-success" style="display: none;">
+        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Wallet Connected!</h3>
+        <p class="wallet-addr" id="connected-addr">0x7a...d3e9</p>
+        <div class="wallet-balances">
+          <div class="balance-item">
+            <span class="bal-label">MOPi Token:</span>
+            <span class="bal-value">1,250 MOPi</span>
+          </div>
+          <div class="balance-item">
+            <span class="bal-label">SOL Balance:</span>
+            <span class="bal-value">4.82 SOL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo-desc">
+        <div class="logo">
+          <img src="assets/logo.jpg" alt="MOPi Logo" class="footer-logo-img">
+          <span class="logo-text">MOPi</span>
+        </div>
+        <p class="footer-desc">Accelerated next-gen play-to-earn country simulator. Breed, build, and conquer the chain.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Ecosystem</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#goals">P2E Goals</a></li>
+          <li><a href="whitepaper.html">Whitepaper</a></li>
+          <li><a href="#roadmap">Official Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Developer Team</h4>
+        <ul>
+          <li><a href="#team">Lead Designer</a></li>
+          <li><a href="#team">Project Manager</a></li>
+          <li><a href="#team">Media Manager</a></li>
+          <li><a href="#team">Community Head</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 MOPi World. All Rights Reserved. Build version 1.0.4a.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
