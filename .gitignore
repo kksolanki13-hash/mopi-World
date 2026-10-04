@@ -1,0 +1,18 @@
+# Deployment and server tools
+cloudflared.exe
+server.ps1
+*.log
+
+# Windows specific
+Thumbs.db
+Desktop.ini
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Node (in case it is used later)
+node_modules/
+dist/
+build/
